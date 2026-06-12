@@ -15,7 +15,11 @@
                 <h2>📋 Gestão de Reservas</h2>
                 <button class="btn btn-outline" onclick="fetchReservas()">Atualizar</button>
             </div>
-            
+
+            <div style="padding: 16px; border-bottom: 1px solid var(--border-color);">
+                <input type="text" id="searchFilter" class="form-control" placeholder="Buscar cliente..." style="margin: 0;">
+            </div>
+
             <div class="reservas-list" id="reservasList">
                 <!-- Reservas serão injetadas aqui -->
             </div>
@@ -50,5 +54,6 @@
     </div>
 
     <script src="app.js"></script>
+    <div id="toastContainer" class="toast-container"></div>
 </body>
 </html>
